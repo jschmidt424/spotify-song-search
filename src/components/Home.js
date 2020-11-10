@@ -7,7 +7,7 @@ const Home = (props) => {
   return (
     <div className="login">
       <Header />
-      <Button variant="info" type="submit">
+      <Button variant="info" type="submit" onClick={handleLogin}>
         Login to Spotify
       </Button>
     </div>
