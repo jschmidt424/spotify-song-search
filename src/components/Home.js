@@ -12,6 +12,7 @@ const Home = (props) => {
   //   REACT_APP_REDIRECT_URL,
   // } = process.env;
 
+  
   const handleLogin = () => {
     window.location = `https://accounts.spotify.com/authorize?client_id=58ae47b883194614b846dbc08bf6e610&redirect_uri=http://localhost:3000/redirect&response_type=token&show_dialog=true`;
   };
