@@ -6,11 +6,11 @@ import Header from "./Header";
 import { Redirect } from "react-router-dom";
 
 const Home = (props) => {
-  const {
-    REACT_APP_CLIENT_ID,
-    REACT_APP_AUTHORIZE_URL,
-    REACT_APP_REDIRECT_URL,
-  } = process.env;
+  // const {
+  //   REACT_APP_CLIENT_ID,
+  //   REACT_APP_AUTHORIZE_URL,
+  //   REACT_APP_REDIRECT_URL,
+  // } = process.env;
 
   const handleLogin = () => {
     window.location = `https://accounts.spotify.com/authorize?client_id=58ae47b883194614b846dbc08bf6e610&redirect_uri=http://localhost:3000/redirect&response_type=token&show_dialog=true`;
