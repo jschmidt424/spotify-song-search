@@ -7,13 +7,13 @@ import { Redirect } from "react-router-dom";
 
 const Home = (props) => {
   const {
-    // REACT_APP_CLIENT_ID,
-    // REACT_APP_AUTHORIZE_URL,
+    REACT_APP_CLIENT_ID,
+    REACT_APP_AUTHORIZE_URL,
     REACT_APP_REDIRECT_URL,
   } = process.env;
 
   const handleLogin = () => {
-    window.location = `https://accounts.spotify.com/authorize?client_id=58ae47b883194614b846dbc08bf6e610&redirect_uri=${REACT_APP_REDIRECT_URL}&response_type=token&show_dialog=true`;
+    window.location = `${REACT_APP_AUTHORIZE_URL}?client_id=${REACT_APP_CLIENT_ID}&redirect_uri=${REACT_APP_REDIRECT_URL}&response_type=token&show_dialog=true`;
   };
 
   const { isValidSession, location } = props;

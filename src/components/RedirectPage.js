@@ -1,6 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import { getParamValues } from "../utilities/functions";
+
 export default class RedirectPage extends React.Component {
   componentDidMount() {
     const { setExpiryTime, history, location } = this.props;

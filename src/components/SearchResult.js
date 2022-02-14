@@ -7,13 +7,8 @@ import ArtistsList from "./ArtistsList";
 import PlayList from "./PlayList";
 
 const SearchResult = (props) => {
-  const {
-    isValidSession,
-    loadMore,
-    result,
-    setCategory,
-    selectedCategory,
-  } = props;
+  const { isValidSession, loadMore, result, setCategory, selectedCategory } =
+    props;
   const { albums, artists, playlist } = result;
 
   if (!isValidSession()) {
